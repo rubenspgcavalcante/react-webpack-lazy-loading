@@ -11,12 +11,14 @@ const home = () => import(/* webpackChunkName: "home" */ './modules/home/index')
 const projects = () => import(/* webpackChunkName: "projects" */ './modules/projects/index');
 const contact = () => import(/* webpackChunkName: "contact" */ './modules/contact/index');
 
+const basePath = (route) => process.env.NODE_ENV === 'development'? `/${route}` : `/react-webpack-lazy-loading/${route}`;
+
 render(
   <Router>
     <AppTemplate>
-      <Route path='' exact={true} component={() => <AsyncComponent moduleProvider={home} />} />
-      <Route path='/projects' exact={true} component={() => <AsyncComponent moduleProvider={projects} />} />
-      <Route path='/contact' exact={true} component={() => <AsyncComponent moduleProvider={contact} />} />
+      <Route path={basePath``} exact={true} component={() => <AsyncComponent moduleProvider={home} />} />
+      <Route path={basePath`projects`} exact={true} component={() => <AsyncComponent moduleProvider={projects} />} />
+      <Route path={basePath`contact`} exact={true} component={() => <AsyncComponent moduleProvider={contact} />} />
     </AppTemplate>
    </Router>,
   document.getElementById("app")

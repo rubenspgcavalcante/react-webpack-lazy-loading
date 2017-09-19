@@ -1,4 +1,4 @@
-const webpack = require("webpack");
+const {DefinePlugin} = require("webpack");
 const {resolve} = require("path");
 
 module.exports = {
@@ -35,5 +35,11 @@ module.exports = {
   resolve: {
     modules: ['node_modules', resolve('app'),]
   },
-  plugins: []
+  plugins: [
+    new DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+      }
+    })
+  ]
 } 
