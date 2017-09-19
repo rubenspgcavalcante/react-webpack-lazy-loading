@@ -25710,19 +25710,16 @@ exports.default = function (_ref) {
         { to: (0, _basePath2.default)(_templateObject) },
         'Home'
       ),
-      '\xA0',
       _react2.default.createElement(
         _reactRouterDom.Link,
         { to: (0, _basePath2.default)(_templateObject2) },
         'Projects'
       ),
-      '\xA0',
       _react2.default.createElement(
         _reactRouterDom.Link,
         { to: (0, _basePath2.default)(_templateObject3) },
         'Contact'
-      ),
-      '\xA0'
+      )
     ),
     _react2.default.createElement(
       'div',

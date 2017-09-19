@@ -5,9 +5,9 @@ import basePath from 'commons/utils/basePath';
 export default ({children}) => (
   <div className="flex-container">
     <nav>
-      <Link to={basePath``} >Home</Link>&nbsp;
-      <Link to={basePath`projects` }>Projects</Link>&nbsp;
-      <Link to={basePath`contact`} >Contact</Link>&nbsp;
+      <Link to={basePath``} >Home</Link>
+      <Link to={basePath`projects`}>Projects</Link>
+      <Link to={basePath`contact`} >Contact</Link>
     </nav>
     <div className="container">
       <div className="card">
