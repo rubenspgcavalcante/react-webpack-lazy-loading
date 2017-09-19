@@ -1,29 +1,40 @@
+$ligther-grey: #EEE;
+$ligth-grey: #CCC;
+$dark-grey: #333;
+$darker-grey: #222;
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  color: #323232;
+  color: rgba($darker-grey, 0.8);
 }
 
 #app {
   @import "loader";
+  
+  .flex-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
 
   h1 {
-    color: #222;
+    color: $darker-grey;
     font-size: 1.5rem;
   }
   h2 {
-    color: #444;
+    color: rgba($darker-grey, 0.9);
     font-size: 1rem;
   }
 
   nav {
-    background-color: #333;
+    background-color: $dark-grey;
     height: 1rem;
     padding: 2rem;
 
     a {
-      color: #CCC;
+      color: $ligther-grey;
       margin-right: 1rem;
       text-decoration: none;
       text-transform: uppercase;
@@ -32,10 +43,29 @@ body {
   }
 
   .container {
-    min-height: 12rem;
-    margin: 1rem;
-    padding: 2rem;
-    box-shadow: 2px 2px 2px #BBB;
-    border: 1px solid #EEE;
+    flex-grow: 1;
+
+    .card {
+      text-align: center;
+      margin: 1rem;
+      padding: 2rem;
+      box-shadow: 2px 2px 2px #BBB;
+      border: 1px solid #EEE;
+    }
+  }
+
+  footer {
+    height: 1rem;
+    padding: 1rem;
+    background: #333;
+    color: $ligther-grey;
+
+    span {
+      float: left;
+    }
+    a {
+      float: right;
+      color: $ligth-grey;
+    }
   }
 }

@@ -25701,7 +25701,7 @@ exports.default = function (_ref) {
   var children = _ref.children;
   return _react2.default.createElement(
     'div',
-    null,
+    { className: 'flex-container' },
     _react2.default.createElement(
       'nav',
       null,
@@ -25727,7 +25727,30 @@ exports.default = function (_ref) {
     _react2.default.createElement(
       'div',
       { className: 'container' },
-      children
+      _react2.default.createElement(
+        'div',
+        { className: 'card' },
+        children
+      )
+    ),
+    _react2.default.createElement('hr', null),
+    _react2.default.createElement(
+      'footer',
+      null,
+      _react2.default.createElement(
+        'span',
+        null,
+        _react2.default.createElement(
+          'b',
+          null,
+          'Created by Rubens Pinheiro Gon\xE7alves Cavalcante'
+        )
+      ),
+      _react2.default.createElement(
+        'a',
+        { href: 'https://github.com/rubenspgcavalcante/react-webpack-lazy-loading' },
+        'Check the source here'
+      )
     )
   );
 };
@@ -25869,7 +25892,7 @@ exports = module.exports = __webpack_require__(223)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif;\n  color: #323232; }\n\n#app .loader,\n#app .loader:before,\n#app .loader:after {\n  border-radius: 50%;\n  width: 2.5em;\n  height: 2.5em;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both;\n  -webkit-animation: load7 1.8s infinite ease-in-out;\n  animation: load7 1.8s infinite ease-in-out; }\n\n#app .loader {\n  color: #575757;\n  font-size: 10px;\n  margin: 80px auto;\n  position: relative;\n  text-indent: -9999em;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation-delay: -0.16s;\n  animation-delay: -0.16s; }\n\n#app .loader:before,\n#app .loader:after {\n  content: '';\n  position: absolute;\n  top: 0; }\n\n#app .loader:before {\n  left: -3.5em;\n  -webkit-animation-delay: -0.32s;\n  animation-delay: -0.32s; }\n\n#app .loader:after {\n  left: 3.5em; }\n\n@-webkit-keyframes load7 {\n  0%,\n  80%,\n  100% {\n    box-shadow: 0 2.5em 0 -1.3em; }\n  40% {\n    box-shadow: 0 2.5em 0 0; } }\n\n@keyframes load7 {\n  0%,\n  80%,\n  100% {\n    box-shadow: 0 2.5em 0 -1.3em; }\n  40% {\n    box-shadow: 0 2.5em 0 0; } }\n\n#app h1 {\n  color: #222;\n  font-size: 1.5rem; }\n\n#app h2 {\n  color: #444;\n  font-size: 1rem; }\n\n#app nav {\n  background-color: #333;\n  height: 1rem;\n  padding: 2rem; }\n  #app nav a {\n    color: #CCC;\n    margin-right: 1rem;\n    text-decoration: none;\n    text-transform: uppercase;\n    font-weight: bold; }\n\n#app .container {\n  min-height: 12rem;\n  margin: 1rem;\n  padding: 2rem;\n  box-shadow: 2px 2px 2px #BBB;\n  border: 1px solid #EEE; }\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif;\n  color: rgba(34, 34, 34, 0.8); }\n\n#app .loader,\n#app .loader:before,\n#app .loader:after {\n  border-radius: 50%;\n  width: 2.5em;\n  height: 2.5em;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both;\n  -webkit-animation: load7 1.8s infinite ease-in-out;\n  animation: load7 1.8s infinite ease-in-out; }\n\n#app .loader {\n  color: #575757;\n  font-size: 10px;\n  margin: 80px auto;\n  position: relative;\n  text-indent: -9999em;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation-delay: -0.16s;\n  animation-delay: -0.16s; }\n\n#app .loader:before,\n#app .loader:after {\n  content: '';\n  position: absolute;\n  top: 0; }\n\n#app .loader:before {\n  left: -3.5em;\n  -webkit-animation-delay: -0.32s;\n  animation-delay: -0.32s; }\n\n#app .loader:after {\n  left: 3.5em; }\n\n@-webkit-keyframes load7 {\n  0%,\n  80%,\n  100% {\n    box-shadow: 0 2.5em 0 -1.3em; }\n  40% {\n    box-shadow: 0 2.5em 0 0; } }\n\n@keyframes load7 {\n  0%,\n  80%,\n  100% {\n    box-shadow: 0 2.5em 0 -1.3em; }\n  40% {\n    box-shadow: 0 2.5em 0 0; } }\n\n#app .flex-container {\n  display: flex;\n  min-height: 100vh;\n  flex-direction: column; }\n\n#app h1 {\n  color: #222;\n  font-size: 1.5rem; }\n\n#app h2 {\n  color: rgba(34, 34, 34, 0.9);\n  font-size: 1rem; }\n\n#app nav {\n  background-color: #333;\n  height: 1rem;\n  padding: 2rem; }\n  #app nav a {\n    color: #EEE;\n    margin-right: 1rem;\n    text-decoration: none;\n    text-transform: uppercase;\n    font-weight: bold; }\n\n#app .container {\n  flex-grow: 1; }\n  #app .container .card {\n    text-align: center;\n    margin: 1rem;\n    padding: 2rem;\n    box-shadow: 2px 2px 2px #BBB;\n    border: 1px solid #EEE; }\n\n#app footer {\n  height: 1rem;\n  padding: 1rem;\n  background: #333;\n  color: #EEE; }\n  #app footer span {\n    float: left; }\n  #app footer a {\n    float: right;\n    color: #CCC; }\n", ""]);
 
 // exports
 
