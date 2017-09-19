@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 239:
+/***/ 226:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Component = undefined;
 
-var _Home = __webpack_require__(242);
+var _Home = __webpack_require__(229);
 
 var _Home2 = _interopRequireDefault(_Home);
 
@@ -21,7 +21,7 @@ var Component = exports.Component = _Home2.default;
 
 /***/ }),
 
-/***/ 242:
+/***/ 229:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31,7 +31,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
