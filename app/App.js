@@ -14,7 +14,7 @@ const contact = () => import(/* webpackChunkName: "contact" */ './modules/contac
 render(
   <Router>
     <AppTemplate>
-      <Route path='/' exact={true} component={() => <AsyncComponent moduleProvider={home} />} />
+      <Route path='' exact={true} component={() => <AsyncComponent moduleProvider={home} />} />
       <Route path='/projects' exact={true} component={() => <AsyncComponent moduleProvider={projects} />} />
       <Route path='/contact' exact={true} component={() => <AsyncComponent moduleProvider={contact} />} />
     </AppTemplate>
