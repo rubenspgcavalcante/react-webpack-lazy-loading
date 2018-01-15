@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: rgba(34, 34, 34, 0.8); }
+
+#app .loader,
+#app .loader:before,
+#app .loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out; }
+
+#app .loader {
+  color: #575757;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s; }
+
+#app .loader:before,
+#app .loader:after {
+  content: '';
+  position: absolute;
+  top: 0; }
+
+#app .loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s; }
+
+#app .loader:after {
+  left: 3.5em; }
+
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em; }
+  40% {
+    box-shadow: 0 2.5em 0 0; } }
+
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em; }
+  40% {
+    box-shadow: 0 2.5em 0 0; } }
+
+#app .flex-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+#app h1 {
+  color: #222;
+  font-size: 1.5rem; }
+
+#app h2 {
+  color: rgba(34, 34, 34, 0.9);
+  font-size: 1rem; }
+
+#app nav {
+  background-color: #333;
+  height: 1rem;
+  padding: 2rem; }
+  #app nav a {
+    color: #EEE;
+    margin-right: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+#app .container {
+  flex-grow: 1; }
+  #app .container .card {
+    text-align: center;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 2px 2px 2px #BBB;
+    border: 1px solid #EEE; }
+
+#app footer {
+  height: 1rem;
+  padding: 1rem;
+  background: #333;
+  color: #EEE; }
+  #app footer span {
+    float: left; }
+  #app footer a {
+    float: right;
+    color: #CCC; }
+#homebody {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }

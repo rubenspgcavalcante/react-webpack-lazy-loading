@@ -7,8 +7,8 @@
   "author": "Rubens Pinheiro",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server --progress --colors --history-api-fallback",
-    "build": "NODE_ENV=production webpack"
+    "dev": "SET NODE_ENV=development & webpack-dev-server --progress --colors --history-api-fallback",
+    "build": "SET NODE_ENV=production & webpack"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
