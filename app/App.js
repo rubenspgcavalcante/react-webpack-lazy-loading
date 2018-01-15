@@ -8,9 +8,9 @@ import basePath from './commons/utils/basePath';
 
 import "./style/app.scss";
 
-const home = () => import(/* webpackChunkName: "home" */ './modules/home/index');
-const projects = () => import(/* webpackChunkName: "projects" */ './modules/projects/index');
-const contact = () => import(/* webpackChunkName: "contact" */ './modules/contact/index');
+const home = () => import(/* webpackChunkName: "home" */ './modules/home/index.js');
+const projects = () => import(/* webpackChunkName: "projects" */ './modules/projects/index.js');
+const contact = () => import(/* webpackChunkName: "contact" */ './modules/contact/index.js');
 
 render(
   <Router>

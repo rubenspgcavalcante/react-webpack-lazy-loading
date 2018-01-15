@@ -1,6 +1,6 @@
-webpackJsonp([1],{
+webpackJsonp([0],{
 
-/***/ 226:
+/***/ 236:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11,9 +11,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Component = undefined;
 
-var _Home = __webpack_require__(229);
+var _Home = __webpack_require__(239);
 
 var _Home2 = _interopRequireDefault(_Home);
+
+__webpack_require__(240);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21,7 +23,7 @@ var Component = exports.Component = _Home2.default;
 
 /***/ }),
 
-/***/ 229:
+/***/ 239:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31,7 +33,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(5);
+var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -54,7 +56,13 @@ exports.default = function () {
   );
 };
 
+/***/ }),
+
+/***/ 240:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
 /***/ })
 
 });
-//# sourceMappingURL=home.chunk.js.map
